@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports Scoring Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Esports Scoring Guide</h1>
+        <div class="tabs">
+            <button class="tab-button" onclick="showTab('kills')">Kills</button>
+            <button class="tab-button" onclick="showTab('assists')">Assists</button>
+        </div>
+        <div id="kills" class="tab-content">
+            <h2>Kills</h2>
+            <div class="player-entry">
+                <label for="playerName">Player Name:</label>
+                <input type="text" id="playerName" placeholder="Enter player name">
+            </div>
+            <div class="map-entries">
+                <div class="map-entry">
+                    <label for="map1Kills">Map 1:</label>
+                    <input type="number" id="map1Kills" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map2Kills">Map 2:</label>
+                    <input type="number" id="map2Kills" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map3Kills">Map 3:</label>
+                    <input type="number" id="map3Kills" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map4Kills">Map 4:</label>
+                    <input type="number" id="map4Kills" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map5Kills">Map 5:</label>
+                    <input type="number" id="map5Kills" value="0">
+                </div>
+            </div>
+            <button onclick="calculateKills()">Calculate Total Kills</button>
+            <div id="totalKills"></div>
+        </div>
+        <div id="assists" class="tab-content" style="display:none;">
+            <h2>Assists</h2>
+            <div class="player-entry">
+                <label for="assistPlayerName">Player Name:</label>
+                <input type="text" id="assistPlayerName" placeholder="Enter player name">
+            </div>
+            <div class="map-entries">
+                <div class="map-entry">
+                    <label for="map1Assists">Map 1:</label>
+                    <input type="number" id="map1Assists" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map2Assists">Map 2:</label>
+                    <input type="number" id="map2Assists" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map3Assists">Map 3:</label>
+                    <input type="number" id="map3Assists" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map4Assists">Map 4:</label>
+                    <input type="number" id="map4Assists" value="0">
+                </div>
+                <div class="map-entry">
+                    <label for="map5Assists">Map 5:</label>
+                    <input type="number" id="map5Assists" value="0">
+                </div>
+            </div>
+            <button onclick="calculateAssists()">Calculate Total Assists</button>
+            <div id="totalAssists"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

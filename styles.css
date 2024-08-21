@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #D3A0E1; /* Purple color */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #D3A0E1; /* Purple color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-button:hover {
+    background-color: #b583c8;
+}
+
+.tab-content {
+    display: none;
+}
+
+.player-entry {
+    margin-bottom: 20px;
+}
+
+.map-entries {
+    margin-bottom: 20px;
+}
+
+.map-entry {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    margin-left: 10px;
+    width: 60px;
+}
+
+button {
+    background-color: #D3A0E1; /* Purple color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b583c8;
+}
+
+#totalKills, #totalAssists {
+    font-size: 18px;
+    font-weight: bold;
+}
